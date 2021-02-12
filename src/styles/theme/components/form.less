@@ -1,0 +1,15 @@
+[data-theme="dark"] {
+  .el-form-item {
+    &__label {
+      color: @dark-main-font-color;
+    }
+
+    &.is-required:not(.is-no-asterisk) {
+      & >.el-form-item__label::before,
+      .el-form-item__label-wrap>.el-form-item__label::before {
+        color: @dark-primary-color;
+      }
+    }
+  }
+
+}

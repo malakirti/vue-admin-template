@@ -1,0 +1,19 @@
+[data-theme="dark"] {
+  .el-input__inner,
+  .el-textarea__inner {
+    color: @dark-main-font-color;
+    background-color: @dark-color;
+    border-color: @dark-border-color;
+    &:hover {
+      border-color: @dark-border-hover-color;
+    }
+    &:focus {
+      border-color: @dark-primary-color;
+    }
+  }
+  .el-input.is-disabled .el-input__inner {
+    color: @dark-main-font-color;
+    background-color: @dark-disabled-bg-color;
+    border-color: @dark-disabled-bg-color;
+  }
+}

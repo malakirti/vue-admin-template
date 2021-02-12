@@ -1,0 +1,50 @@
+@import "components/menu";
+@import "components/dropdown";
+@import "components/button";
+@import "components/modal";
+@import "components/form";
+@import "components/input";
+@import "components/select";
+@import "components/pagination";
+@import "components/table";
+@import "components/checkbox";
+@import "components/picker";
+@import "components/icon";
+@import "components/drawer";
+@import "components/switch";
+@import "components/card";
+@import "components/timeline";
+
+body {
+  .el-loading-mask {
+    font-size: 36px;
+  }
+
+  .el-dialog__header {
+    padding: 16px 20px 16px;
+  }
+
+  .el-checkbox__inner {
+    width: 16px;
+    height: 16px;
+
+    &::after {
+      border-width: 2px;
+    }
+  }
+
+  td.next-month span,
+  td.prev-month span,
+  .el-month-table td .cell,
+  .el-date-table td.available span {
+    border-radius: 2px;
+  }
+}
+
+[data-theme="dark"] {
+  color: @dark-main-font-color;
+  background: @dark-base-bg-color;
+}
+
+
+

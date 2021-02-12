@@ -1,0 +1,22 @@
+[data-theme="dark"] {
+  .el-checkbox {
+    &__inner {
+      background-color: @dark-color;
+      border-color: @dark-border-color;
+      &::after {
+        border-color: #fff;
+      }
+      &:hover {
+        border-color: @dark-primary-color;
+      }
+    }
+    &__input.is-focus .el-checkbox__inner {
+      border-color: @dark-border-color;
+    }
+    &__input.is-checked .el-checkbox__inner,
+    &__input.is-indeterminate .el-checkbox__inner {
+      background-color: @dark-primary-color;
+      border-color: @dark-primary-color;
+    }
+  }
+}

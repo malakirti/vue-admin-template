@@ -1,0 +1,32 @@
+[data-theme="dark"] {
+  .el-pagination {
+    .btn-next,
+    .btn-prev,
+    button:disabled {
+      color: @dark-main-font-color;
+      background: @dark-color;
+    }
+    .btn-next,
+    .btn-prev {
+      &:hover {
+        color: @dark-primary-color;
+      }
+    }
+
+    &__sizes .el-input .el-input__inner:hover {
+      border-color: @dark-border-hover-color;
+    }
+  }
+  .el-pager li {
+    color: @dark-main-font-color;
+    background: @dark-color;
+    transition: all 0.3s;
+    &:hover {
+      color: @dark-primary-color;
+    }
+    &.active {
+      color: @dark-black-font-color;
+      background: @dark-primary-color;
+    }
+  }
+}

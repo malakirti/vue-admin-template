@@ -1,0 +1,29 @@
+::-webkit-scrollbar {
+  width: @scrollbar-width;
+  height: @scrollbar-height;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 10px;
+
+  &:hover {
+    background: #4e4e4e;
+  }
+}
+
+[data-theme='light'] {
+  ::-webkit-scrollbar-thumb {
+    background: #cdcdcc;
+    border-radius: 10px;
+
+    &:hover {
+      background: #bfbfbe;
+    }
+  }
+}

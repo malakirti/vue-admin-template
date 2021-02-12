@@ -1,0 +1,63 @@
+//stylelint-disable
+
+[data-theme="dark"] {
+  .el-table {
+    color: @dark-main-font-color;
+    background: @dark-main-bg-color;
+    &--border th.gutter:last-of-type {
+      border-color: @dark-border-color;
+    }
+    &::before,
+    &--border::after,
+    &--group::after,
+    &__fixed::before,
+    &__fixed-right::before {
+      background-color: @dark-border-color;
+    }
+
+    th,
+    tr,
+    &__expanded-cell {
+      background: @dark-main-bg-color;
+    }
+    thead {
+      color: @dark-main-font-color;
+    }
+    td,
+    &--border,
+    &--group,
+    th.is-leaf {
+      border-color: @dark-border-color;
+    }
+
+    &__body {
+      tr.hover-row {
+        & > td,
+        &.current-row>td,
+        &.el-table__row--striped>td,
+        &.el-table__row--striped.current-row>td {
+          background-color: @dark-hover-bg-color;
+        }
+      }
+    }
+
+    &--striped {
+      .el-table__body {
+        tr.el-table__row--striped td {
+          background: @dark-base-bg-color;
+        }
+      }
+    }
+
+    &--enable-row-hover .el-table__body tr:hover>td {
+      background: @dark-row-hover-bg-color;
+    }
+
+    .ascending .sort-caret.ascending {
+      border-bottom-color: @dark-primary-color;
+    }
+    .descending .sort-caret.descending {
+      border-top-color: @dark-primary-color;
+    }
+  }
+}

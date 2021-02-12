@@ -1,0 +1,36 @@
+[data-theme="dark"] {
+  .el-button--default {
+    color: @dark-primary-color;
+    background-color: transparent;
+    border-color: @dark-primary-color;
+    transition: all 0.3s;
+
+    &:hover {
+      color: @dark-black-font-color;
+      background-color: @dark-primary-color;
+      border-color: @dark-primary-color;
+    }
+  }
+  .el-button--primary {
+    color: @dark-black-font-color;
+    background-color: @dark-primary-color;
+    border-color: @dark-primary-color;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+      color: @dark-black-font-hover-color;
+      background-color: @dark-primary-hover-color;
+      border-color: @dark-primary-hover-color;
+    }
+  }
+
+  .el-button--text {
+    color: @dark-primary-color;
+
+    &:hover,
+    &:focus {
+      color: @dark-primary-text-hover-color;
+    }
+  }
+}

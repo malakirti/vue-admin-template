@@ -1,0 +1,78 @@
+[data-theme="dark"] {
+  .el-picker-panel {
+    color: @dark-main-font-color;
+    border-color: @dark-border-color;
+  }
+  .el-date-table th {
+    border-color: @dark-border-color;
+  }
+
+  .el-date-picker__header--bordered {
+    border-color: @dark-border-color;
+  }
+  .el-date-picker__header-label,
+  .el-year-table td .cell,
+  .el-month-table td .cell {
+    color: @light-color;
+  }
+  .el-date-picker__header-label.active,
+  .el-date-picker__header-label:hover {
+    color: @dark-primary-color;
+  }
+
+  .el-year-table td,
+  .el-month-table td {
+    .cell {
+      transition: all 0.3s;
+      &:hover {
+        color: @dark-black-font-color;
+        background-color: @dark-primary-color;
+      }
+    }
+    &.current:not(.disabled) .cell {
+      color: @dark-primary-color;
+      border: 1px solid @dark-primary-color;
+      transition: all 0.3s;
+      &:hover {
+        color: @dark-black-font-color;
+      }
+    }
+  }
+  td.next-month span,
+  td.prev-month span {
+    color: rgba(255, 255, 255, 0.12);
+    transition: all 0.3s;
+    &:hover {
+      color: @dark-black-font-color;
+      background-color: @dark-primary-color;
+    }
+  }
+
+  .el-year-table,
+  .el-date-table {
+    color: @light-color;
+    td.today a.cell,
+    td.today span {
+      color: @dark-primary-color;
+    }
+    td.available {
+      span {
+        transition: all 0.3s;
+      }
+      &:hover span {
+        color: @dark-black-font-color;
+        background-color: @dark-primary-color;
+      }
+    }
+    td.current:not(.disabled) span {
+      color: @dark-primary-color;
+      background-color: transparent;
+      border: 1px solid @dark-primary-color;
+
+      &:hover {
+        color: @dark-black-font-color;
+        background-color: @dark-primary-color;
+      }
+    }
+  }
+}
